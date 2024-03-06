@@ -1,16 +1,21 @@
+import 'package:isar/isar.dart';
+
+part 'channel.g.dart';
+
+@embedded
 class Channel {
-  final String id;
-  final String link;
-  final String imageUrl;
-  final String name;
+  String? id;
+  String? link;
+  String? imageUrl;
+  String? name;
 
   Channel({
-    required this.id,
-    required this.link,
-    required this.imageUrl,
-    required this.name,
+    this.id,
+    this.link,
+    this.imageUrl,
+    this.name,
   });
 
   @override
-  String toString() => name;
+  String toString() => name ?? '';
 }

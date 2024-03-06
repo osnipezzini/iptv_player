@@ -1,12 +1,18 @@
-import 'package:m3u_parser/models/channel.dart';
+import 'package:iptv_player/models/channel.dart';
+import 'package:isar/isar.dart';
 
+part 'subgroup.g.dart';
+
+@embedded
 class SubGroup {
-  final String name;
-  final List<Channel> channels = [];
+  String? name;
+  List<Channel> channels = [];
 
   SubGroup({
-    required this.name,
+    this.name,
   });
+
+  void addChannel(Channel channel) => channels.add(channel);
 
   @override
   String toString() => '$name - ${channels.length} canais.';

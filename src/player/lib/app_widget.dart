@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:m3u_parser/pages/home_page.dart';
+import 'package:iptv_player/pages/home_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

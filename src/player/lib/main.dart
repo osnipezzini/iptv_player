@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:m3u_parser/app_widget.dart';
+import 'package:iptv_player/app_widget.dart';
+import 'package:iptv_player/services/channel_service.dart';
 
-void main() {
+Future<void> main() async {
+  await ChannelService.initDb();
   runApp(const MyApp());
 }
-
-
-
